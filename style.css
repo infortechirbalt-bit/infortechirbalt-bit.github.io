@@ -1,20 +1,19 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   background: #f4f6f8;
   color: #222;
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #1e3c72, #6a1b9a);
+  background: linear-gradient(135deg, #1e3c72, #6a11cb);
   color: white;
-  padding: 50px 20px;
+  padding: 40px 20px 60px;
   text-align: center;
 }
 
@@ -27,63 +26,71 @@ body {
 }
 
 .logo {
-  height: 48px;
+  height: 45px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   margin-left: 15px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .hero h1 {
-  margin-top: 40px;
-  font-size: 34px;
+  margin-top: 50px;
+  font-size: 32px;
 }
 
 .hero p {
-  margin-top: 10px;
+  font-size: 16px;
   opacity: 0.9;
 }
 
 /* SECTIONS */
 section {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 h2 {
   text-align: center;
   color: #1e3c72;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* SERVICES */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
 }
 
-.card {
+.carte {
   background: white;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   text-align: center;
 }
 
-.card img {
+.carte img {
   width: 100%;
-  height: 160px;
+  height: 180px;
   object-fit: cover;
+  display: block;
 }
 
-.card h3 {
+.carte h3 {
   padding: 15px;
-  color: #6a1b9a;
+  color: #6a11cb;
+  font-size: 17px;
+}
+
+/* CONTACT */
+#contact p {
+  text-align: center;
+  font-size: 16px;
 }
 
 /* FOOTER */
@@ -98,16 +105,24 @@ footer {
 /* WHATSAPP */
 .whatsapp {
   position: fixed;
-  right: 20px;
   bottom: 20px;
+  right: 20px;
   background: #25D366;
   color: white;
-  font-size: 26px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 26px;
   text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 26px;
+  }
 }
