@@ -1,99 +1,133 @@
-body {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  background: #f4f6f8;
+}
+
+/* GLOBAL */
+body {
+  background: #f5f6fa;
   color: #222;
+  line-height: 1.6;
 }
 
-/* HERO */
-.hero {
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* HEADER */
+header {
   background: linear-gradient(135deg, #1e3c72, #6a1b9a);
-  color: white;
-  padding-bottom: 60px;
+  color: #fff;
+  padding: 25px 20px 60px;
 }
 
-.navbar {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
 }
 
-.navbar img {
-  height: 40px;
+header nav img {
+  height: 45px;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar a {
-  color: white;
+header nav a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
-.hero-text {
+header h1 {
   text-align: center;
-  padding: 60px 20px;
-}
-
-.hero-text h1 {
+  margin-top: 40px;
   font-size: 32px;
-  margin-bottom: 10px;
 }
 
-/* SECTIONS */
+header p {
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* SECTION */
 section {
+  padding: 60px 20px;
   max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
 }
 
-h2 {
+section h2 {
   text-align: center;
+  margin-bottom: 40px;
   color: #1e3c72;
-  margin-bottom: 30px;
+  font-size: 28px;
 }
 
-/* SERVICES */
+/* SERVICES GRID */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
-.card {
-  background: white;
+/* SERVICE CARD */
+.service-card {
+  background: #fff;
   border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   overflow: hidden;
-  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.service-card img {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
 }
 
-.card h3 {
-  padding: 15px;
+.service-card h3 {
+  padding: 18px;
+  text-align: center;
   color: #6a1b9a;
+  font-size: 20px;
 }
 
 /* CONTACT */
-#contact {
+.contact {
   text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
 footer {
   background: #1e3c72;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
 }
