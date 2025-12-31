@@ -350,3 +350,14 @@ main, section, .container, .content {
     padding: 20px;
   }
 }
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav a {
+    display: block;
+    padding: 10px 0;
+  }
+}
