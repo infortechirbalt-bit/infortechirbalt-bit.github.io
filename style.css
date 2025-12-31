@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -5,387 +6,119 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* GLOBAL */
 body {
-  background: #f4f6f8;
+  background: #f5f7fa;
   color: #222;
+  line-height: 1.6;
 }
 
-/* HERO */
+/* NAVBAR */
 .hero {
-  background: linear-gradient(135deg, #1e3c72, #6a1b9a);
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
+  background: linear-gradient(135deg, #0a2a66, #1246a3);
+  padding: 20px 0;
 }
 
-.topbar {
-  max-width: 1200px;
+.navbar {
+  max-width: 1100px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .logo {
-  height: 45px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-}
-
-.hero h1 {
-  margin-top: 40px;
-  font-size: 34px;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-/* SECTION */
-section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #1e3c72;
-}
-
-/* SERVICES */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.service-card {
-  background: white;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-}
-
-.service-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.service-card h3 {
-  padding: 16px;
-  color: #6a1b9a;
-  text-align: center;
-}
-
-.service-card p {
-  padding: 0 16px 20px;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* CONTACT */
-.contact {
-  text-align: center;
-}
-
-/* FOOTER */
-footer {
-  background: #1e3c72;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 24px;
-  }
-}
-/* ===== STRUCTURE FIX (GLOBAL) ===== */
-
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-}
-
-.hero img.logo {
-  max-width: 140px;
-  margin-bottom: 15px;
-}
-
-.hero nav {
-  margin-top: 20px;
-}
-
-.hero nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  padding: 40px 20px;
-}
-
-.card {
-  background: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card h3 {
-  padding: 15px;
-  font-size: 18px;
-}
-
-footer {
-  text-align: center;
-  padding: 30px 15px;
-  margin-top: 40px;
-}
-
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 22px;
-  }
-}
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  z-index: 1000;
-}/* ================================
-   GLOBAL PROFESSIONAL FIX - IGTE
-   ================================ */
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
+  height: 50px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: #ffffff;
-}
-
-.hero-content {
-  padding: 40px 20px;
-}
-
-.hero h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-/* SECTIONS */
-.section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 60px 20px;
-}
-
-.section.light {
-  background: #f5f7fa;
-}
-
-/* SERVICES GRID */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-.card {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+/* SERVICES */
+.services-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.services-section h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
-.card h3 {
-  padding: 15px;
-  font-size: 18px;
-}
-
-.card p {
-  padding: 0 15px 20px;
-  font-size: 15px;
-  color: #555;
-}
-
-/* LISTS */
-.services-list li,
-.values li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-/* FOOTER */
-.footer {
-  background: #0f172a;
-  color: #ffffff;
-  text-align: center;
-  padding: 30px 15px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-}
-/* ===== GLOBAL RESET ORIENTATION FIX ===== */
-html, body {
-  writing-mode: horizontal-tb !important;
-  transform: none !important;
-  rotate: 0deg !important;
-  overflow-x: hidden;
-}
-
-/* Cancel any inherited rotation */
-* {
-  transform: none;
-}
-
-/* Main layout fix */
-main, section, .container, .content {
-  transform: none !important;
-  writing-mode: horizontal-tb !important;
-}
-
-/* ===== SERVICES GRID FINAL FIX ===== */
+/* GRID */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
-  padding: 40px;
 }
 
+/* CARD */
 .service-card {
   background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+/* 🔴 IMAGE — PARTIE CRITIQUE */
 .service-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  display: block;          /* OBLIGATOIRE */
+  visibility: visible;     /* OBLIGATOIRE */
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .services-grid {
-    padding: 20px;
+/* TEXTE */
+.service-card h3 {
+  font-size: 20px;
+  margin: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+  margin: 0 15px 20px;
+  color: #555;
+}
+
+/* FOOTER */
+.footer {
+  background: #0a1e3a;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 60px;
+}
+
+.footer p {
+  margin: 6px 0;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .navbar ul {
+    gap: 15px;
   }
-}
-@media (max-width: 768px) {
-  header nav {
-    flex-direction: column;
-    text-align: center;
+
+  .services-section h1 {
+    font-size: 28px;
   }
-
-  header nav a {
-    display: block;
-    padding: 10px 0;
-  }
-}
-.service-card {
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.service-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  background: #f2f2f2;
-}
-/* FORCE SAME HEIGHT FOR ALL SERVICE CARDS */
-.service-card {
-  min-height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* IMAGE PLACEHOLDER (if missing) */
-.service-card .image-placeholder {
-  height: 180px;
-  background: linear-gradient(135deg, #dfe9f3, #f5f7fb);
-  border-radius: 10px;
-  margin-bottom: 15px;
 }
