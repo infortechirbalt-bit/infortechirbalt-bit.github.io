@@ -304,3 +304,49 @@ footer {
     font-size: 24px;
   }
 }
+/* ===== GLOBAL RESET ORIENTATION FIX ===== */
+html, body {
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+  rotate: 0deg !important;
+  overflow-x: hidden;
+}
+
+/* Cancel any inherited rotation */
+* {
+  transform: none;
+}
+
+/* Main layout fix */
+main, section, .container, .content {
+  transform: none !important;
+  writing-mode: horizontal-tb !important;
+}
+
+/* ===== SERVICES GRID FINAL FIX ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .services-grid {
+    padding: 20px;
+  }
+}
