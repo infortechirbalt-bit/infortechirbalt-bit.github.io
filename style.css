@@ -374,3 +374,18 @@ main, section, .container, .content {
   object-fit: cover;
   background: #f2f2f2;
 }
+/* FORCE SAME HEIGHT FOR ALL SERVICE CARDS */
+.service-card {
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* IMAGE PLACEHOLDER (if missing) */
+.service-card .image-placeholder {
+  height: 180px;
+  background: linear-gradient(135deg, #dfe9f3, #f5f7fb);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
