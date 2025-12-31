@@ -26,6 +26,9 @@ body {
 
 .logo {
     height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .navbar ul {
